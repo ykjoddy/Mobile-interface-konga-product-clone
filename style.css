@@ -1,0 +1,157 @@
+/* CSS RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITY STYLE */
+body {
+  line-height: 2.4rem;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* HEADER / NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgba(0, 0, 0, 0.893);
+  box-shadow: 0px 0px 2px 0px black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(44, 40, 40, 0.848);
+}
+nav a {
+  background-color: green;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+header {
+  height: 40px;
+}
+
+/* SECTION-ONE */
+.product-image {
+  /* background-image: url(images/iPhone-11-PNG-Image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  width: 100%; */
+}
+img {
+  width: 100%;
+}
+
+/* SECTION-TWO */
+.product-heading,
+.product {
+  font-family: sans-serif;
+}
+
+.product {
+  color: #333;
+  font-weight: 100;
+}
+
+.one {
+  color: blue;
+}
+
+.product-brand-name {
+}
+
+.product-purchase,
+.product-price,
+.product-delivery {
+  margin: 10px auto;
+}
+
+.delivery-state {
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px 10px;
+}
+
+.pp {
+  background-color: rgb(56, 116, 56);
+  border: none;
+  padding: 10px 50px;
+  color: white;
+  border-radius: 5px;
+}
+
+i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #aa336a;
+}
+
+.product-delivery {
+  display: flex;
+}
+
+.product-delivery-detail-2 {
+  margin-left: 50px;
+}
+
+.fa-heart {
+  font-size: larger;
+}
+
+.product-quantity-counter {
+  border: 1px solid #ddd;
+  width: 80px;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  padding: 0 10px 39px 10px;
+  margin: 0 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  height: 30px;
+}
+
+/* RESPONSIVE STYLE */
+@media (max-width: 700px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .product-heading {
+    font-size: 12px;
+    text-align: center;
+  }
+  i {
+    font-size: 15px;
+  }
+  .product-delivery {
+    font-size: 8px;
+  }
+}
